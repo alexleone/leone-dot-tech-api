@@ -20,6 +20,7 @@ export async function main(event, context, callback) {
     callback(null, success(params.Item));
   }
   catch(e) {
-    callback(null, failure({status: false}));
+      console.log(e);
+      callback(null, failure({status: false}));
   }
 };
